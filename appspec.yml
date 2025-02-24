@@ -1,11 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: /home/ec2-user/app/your-repository/index.html
+  - source: /home/ec2-user/app/realyun-asg-deploy/index.html
     destination: /var/www/html/index.html
 hooks:
   AfterInstall:
-    - location: /home/ec2-user/app/scripts/deploy.sh
+    - location: /home/ec2-user/app/realyun-asg-deploy/scripts/deploy.sh
       timeout: 300
       runas: ec2-user
 
